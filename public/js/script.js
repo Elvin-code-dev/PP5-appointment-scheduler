@@ -10,6 +10,8 @@ const submitBtn = document.getElementById("submit-btn");
 
 formRef.onsubmit = () => {
 	let isValid = checkFormValidity();
+
+	return isValid;
 };
 
 // Helper function
@@ -25,10 +27,12 @@ function checkFormValidity() {
 	}
 
 	if (inputFields.date.value.trim() == "") {
+		document.getElementById("err-date").style.display = "block";
 		valid = false;
 	}
 
 	if (inputFields.time.value.trim() == "") {
+		document.getElementById("err-time").style.display = "block";
 		valid = false;
 	}
 
