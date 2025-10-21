@@ -18,10 +18,12 @@ function checkFormValidity() {
 
 	if (inputFields.fname.value.trim() == "") {
 		valid = false;
+		document.getElementById("err-fname").style.display = "block";
 	}
 
 	if (inputFields.lname.value.trim() == "") {
 		valid = false;
+		document.getElementById("err-lname").style.display = "block";
 	}
 
 	if (inputFields.date.value.trim() == "") {
