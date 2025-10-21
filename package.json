@@ -1,0 +1,23 @@
+{
+	"name": "pp5-appointment-scheduler",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Elvin-code-dev/PP5-appointment-scheduler.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/Elvin-code-dev/PP5-appointment-scheduler/issues"
+	},
+	"homepage": "https://github.com/Elvin-code-dev/PP5-appointment-scheduler#readme",
+	"dependencies": {
+		"express": "^5.1.0"
+	}
+}
