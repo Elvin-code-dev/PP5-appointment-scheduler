@@ -64,6 +64,10 @@ button {
 	cursor: pointer;
 }
 
+a {
+	color: white;
+}
+
 .error {
 	color: red;
 	display: none;
