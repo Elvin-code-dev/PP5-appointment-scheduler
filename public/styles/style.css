@@ -15,7 +15,7 @@ body {
 }
 
 main {
-	width: 30%;
+	width: clamp(30%, 60vw, 80%);
 	margin: 0 auto;
 	box-shadow: 0 4px 10px black;
 	border: 1px solid black;
@@ -32,7 +32,7 @@ form {
 
 fieldset {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(2, 1fr);
 	gap: 1rem;
 	flex-wrap: wrap;
 	text-align: left;
@@ -67,4 +67,21 @@ button {
 .error {
 	color: red;
 	display: none;
+}
+
+@media (max-width: 1800px) {
+	main {
+	}
+}
+
+@media (max-width: 900px) {
+	main {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	fieldset {
+		grid-template-columns: 1fr;
+	}
 }
