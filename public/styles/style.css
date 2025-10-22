@@ -69,11 +69,6 @@ button {
 	display: none;
 }
 
-@media (max-width: 1800px) {
-	main {
-	}
-}
-
 @media (max-width: 900px) {
 	main {
 		width: 100%;
