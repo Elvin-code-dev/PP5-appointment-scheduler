@@ -19,19 +19,28 @@ function checkFormValidity() {
 	if (inputFields.fname.value.trim() == "") {
 		valid = false;
 		document.getElementById("err-fname").style.display = "block";
+	} else{
+		document.getElementById("err-fname").style.display = "none";
 	}
 
 	if (inputFields.lname.value.trim() == "") {
 		valid = false;
 		document.getElementById("err-lname").style.display = "block";
+	} else{
+		document.getElementById("err-lname").style.display = "none";
 	}
 
 	if (inputFields.date.value.trim() == "") {
 		valid = false;
+	} else{
+		document.getElementById("err-date").style.display = "none";
+		
 	}
 
 	if (inputFields.time.value.trim() == "") {
 		valid = false;
+	} else{
+		document.getElementById("err-time").style.display = "none";
 	}
 
 	// Return validitiy
