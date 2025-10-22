@@ -14,25 +14,38 @@
 		<main>
 			<form id="schedular-form" method="get">
 				<fieldset>
+					<!-- Legend -->
+					<legend>Schedule Form</legend>
+
 					<!-- First name -->
-					<label for="fname">First Name: </label>
-					<input id="fname" name="fname" type="text" />
-					<span id="err-fname" class="error">First name cannot be empty!</span>
+					<div>
+						<label for="fname">First Name: </label>
+						<input id="fname" name="fname" type="text" />
+						<span id="err-fname" class="error"
+							>First name cannot be empty!</span
+						>
+					</div>
 
 					<!-- Last name -->
-					<label for="lname">Last Name:</label>
-					<input type="text" id="lname" name="lname" />
-					<span id="err-lname" class="error">Last name cannot be empty!</span>
+					<div>
+						<label for="lname">Last Name:</label>
+						<input type="text" id="lname" name="lname" />
+						<span id="err-lname" class="error">Last name cannot be empty!</span>
+					</div>
 
 					<!-- Date -->
-					<label for="date">Date: </label>
-					<input type="date" name="date" id="date" />
-					<span id="err-date" class="error">Select a date!</span>
+					<div>
+						<label for="date">Date: </label>
+						<input type="date" name="date" id="date" />
+						<span id="err-date" class="error">Select a date!</span>
+					</div>
 
 					<!-- Time -->
-					<label for="time">Time: </label>
-					<input type="time" name="time" id="time" />
-					<span id="err-time" class="error">Select a time!</span>
+					<div>
+						<label for="time">Time: </label>
+						<input type="time" name="time" id="time" />
+						<span id="err-time" class="error">Select a time!</span>
+					</div>
 				</fieldset>
 
 				<!-- Button -->

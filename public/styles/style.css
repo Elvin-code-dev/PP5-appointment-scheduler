@@ -1,4 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center; /* horizontal */
+	align-items: center; /* vertical */
+	height: 100vh; /* full viewport height */
+	color: white;
+	margin: 0;
+	background-color: #333;
+}
+
+main {
+	width: 30%;
+	margin: 0 auto;
+	box-shadow: 0 4px 10px black;
+	border: 1px solid black;
+	padding: 1rem;
+	border-radius: 5px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: center;
+}
+
+fieldset {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	flex-wrap: wrap;
+	text-align: left;
+	border-radius: 5px;
+	padding: 1rem;
+}
+
+input {
+	padding: 1rem 0.5rem;
+	font-size: large;
+}
+
+fieldset div {
+	display: flex;
+	flex-direction: column;
+	font-size: larger;
+}
+
+legend {
+	font-size: 30px;
+}
+
+button {
+	background-color: #444;
+	color: white;
+	border: 1px solid black;
+	padding: 0.5rem;
+	font-size: large;
+	cursor: pointer;
+}
+
 .error {
-    color: darkred;
-    display: none;
+	color: red;
+	display: none;
 }
