@@ -4,6 +4,9 @@ import express from "express";
 // Create an instance of an Express application
 const app = express();
 
+// Define the port number where our server will listen
+const PORT = 3005;
+
 // Enable static file serving
 app.use(express.static("public"));
 
@@ -12,8 +15,6 @@ app.use(express.urlencoded({ extended: true }));
 
 //store the data
 const appointments = [];
-// Define the port number where our server will listen
-const PORT = 3005;
 
 // Define a default "route" ('/')
 // req: contains information about the incoming request
