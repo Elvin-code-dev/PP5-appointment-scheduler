@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 });
 
 // define a "admin route"
-app.get("/admin-panel", (req, res) => {
+app.get("/admin", (req, res) => {
 	res.send(appointments);
 });
 
