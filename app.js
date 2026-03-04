@@ -10,6 +10,8 @@ const PORT = 3005;
 // Enable static file serving
 app.use(express.static("public"));
 
+// Hi
+
 //post method submissions
 app.use(express.urlencoded({ extended: true }));
 
